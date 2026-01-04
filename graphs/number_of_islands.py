@@ -48,15 +48,16 @@ def num_islands_bfs(grid):
     if not grid or not grid[0]:
         return 0
     
+    from collections import deque
     rows, cols = len(grid), len(grid[0])
     count = 0
     
     def bfs(r, c):
-        queue = [(r, c)]
+        queue = deque([(r, c)])
         grid[r][c] = '0'
         
         while queue:
-            row, col = queue.pop(0)
+            row, col = queue.popleft()
             directions = [(1, 0), (-1, 0), (0, 1), (0, -1)]
             
             for dr, dc in directions:

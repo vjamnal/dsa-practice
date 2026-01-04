@@ -36,15 +36,16 @@ def invert_tree(root):
 
 def invert_tree_iterative(root):
     """
-    Iterative solution using queue (BFS) - O(n) time, O(n) space
+    Iterative solution using deque (BFS) - O(n) time, O(n) space
     """
     if not root:
         return None
     
-    queue = [root]
+    from collections import deque
+    queue = deque([root])
     
     while queue:
-        node = queue.pop(0)
+        node = queue.popleft()
         
         # Swap children
         node.left, node.right = node.right, node.left

@@ -1,7 +1,7 @@
 # problem: Valid Anagram
-# approach: Hash Map (Frequency Count)
-# time: O(n)
-# space: O(n)
+# approach: Sorting or Hash Map (Frequency Count)
+# time: O(n log n) for sorting, O(n) for hash map
+# space: O(1) for sorting, O(n) for hash map
 
 """
 Valid Anagram
@@ -32,10 +32,10 @@ def is_anagram_hashmap(s, t):
         if char not in char_count:
             return False
         char_count[char] -= 1
-        if char_count[char] < 0:
-            return False
+        if char_count[char] == 0:
+            del char_count[char]
     
-    return True
+    return len(char_count) == 0
 
 
 if __name__ == "__main__":

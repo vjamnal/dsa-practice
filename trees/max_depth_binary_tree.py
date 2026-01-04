@@ -32,16 +32,17 @@ def max_depth(root):
 
 def max_depth_iterative(root):
     """
-    Iterative BFS using queue - O(n) time, O(n) space
+    Iterative BFS using deque - O(n) time, O(n) space
     """
     if not root:
         return 0
     
-    queue = [(root, 1)]
+    from collections import deque
+    queue = deque([(root, 1)])
     max_level = 0
     
     while queue:
-        node, level = queue.pop(0)
+        node, level = queue.popleft()
         max_level = max(max_level, level)
         
         if node.left:
