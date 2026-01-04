@@ -1,26 +1,49 @@
 # Data Structures and Algorithms Practice
 
-A comprehensive collection of data structures and algorithms implementations in Python for learning and practice.
+A comprehensive collection of DSA problems and solutions organized by patterns and problem types.
+
+## 📊 DSA Progress Tracker
+
+### ✅ Completed
+- Arrays
+- Strings
+- Two Pointers
+- Sliding Window
+- Hash Maps
+- Stack
+- Queue
+- Linked List
+
+### 🔄 In Progress
+- Trees
+- Graphs
+- Recursion
+
+### ⏭️ Next
+- Dynamic Programming
+- Greedy
+- Math
 
 ## 📚 Repository Structure
 
 ```
 dsa-practice/
-├── data-structures/
-│   ├── arrays/              # Array implementations
-│   ├── linked-lists/        # Linked list implementations
-│   ├── stacks/              # Stack implementations
-│   ├── queues/              # Queue implementations
-│   ├── trees/               # Tree data structures (BST, etc.)
-│   ├── graphs/              # Graph implementations
-│   └── hash-tables/         # Hash table implementations
-├── algorithms/
-│   ├── sorting/             # Sorting algorithms
-│   ├── searching/           # Searching algorithms
-│   ├── dynamic-programming/ # DP problems
-│   ├── greedy/              # Greedy algorithms
-│   └── recursion/           # Recursive algorithms
-└── problems/                # Common coding problems with solutions
+├── arrays/                    # Array-based problems
+├── strings/                   # String manipulation problems
+├── two-pointers/              # Two pointer technique
+├── sliding-window/            # Sliding window problems
+├── hashmaps/                  # Hash map problems
+├── stack/                     # Stack problems
+├── queue/                     # Queue problems
+├── linked-list/               # Linked list problems
+├── trees/                     # Tree problems (BST, binary trees)
+├── graphs/                    # Graph problems (DFS, BFS)
+├── recursion/                 # Recursion problems
+├── dynamic-programming/       # DP problems
+├── greedy/                    # Greedy algorithm problems
+├── math/                      # Mathematical problems
+├── solutions_v2/              # Your personal solutions
+└── README.md
 ```
 
 ## 🚀 Getting Started
@@ -30,80 +53,166 @@ dsa-practice/
 
 ### Running Examples
 
-Each file can be run independently. For example:
+Each problem file can be run independently:
 
 ```bash
-# Run a data structure example
-python data-structures/stacks/stack.py
-
-# Run an algorithm example
-python algorithms/sorting/sorting_algorithms.py
-
 # Run a problem solution
-python problems/two_sum.py
+python arrays/two_sum.py
+python trees/invert_binary_tree.py
+python dynamic-programming/climbing_stairs.py
 ```
 
-## 📖 Contents
+## 📝 Problem Format
 
-### Data Structures
+Every problem follows this structure:
 
-#### Arrays
-- **Dynamic Array**: Auto-resizing array implementation
+```python
+# problem: Problem Name
+# approach: Solution approach
+# time: Time complexity
+# space: Space complexity
 
-#### Linked Lists
-- **Singly Linked List**: Linear data structure with nodes
+"""
+Detailed problem description
+"""
 
-#### Stacks
-- **Stack**: LIFO (Last In First Out) data structure
+def solution():
+    # Implementation
+    pass
+```
 
-#### Queues
-- **Queue**: FIFO (First In First Out) data structure
+## 📖 Categories
 
-#### Trees
-- **Binary Search Tree**: BST with insert, search, and traversal operations
+### Arrays
+Core array manipulation problems
+- Two Sum
+- Maximum Subarray (Kadane's Algorithm)
+- Best Time to Buy and Sell Stock
 
-#### Graphs
-- **Graph**: Adjacency list representation with BFS and DFS
+### Strings
+String processing and pattern matching
+- Valid Palindrome
+- Valid Anagram
+- Longest Substring Without Repeating Characters
 
-#### Hash Tables
-- **Hash Table**: Key-value storage using hash function
+### Two Pointers
+Problems using two pointer technique
+- Container With Most Water
+- Three Sum
+- Valid Palindrome
 
-### Algorithms
+### Sliding Window
+Subarray/substring problems
+- Longest Substring Without Repeating Characters
+- Maximum Sum Subarray of Size K
 
-#### Sorting
-- Bubble Sort - O(n²)
-- Selection Sort - O(n²)
-- Insertion Sort - O(n²)
-- Merge Sort - O(n log n)
-- Quick Sort - O(n log n) average
+### Hash Maps
+Problems using hash maps for O(1) lookups
+- Two Sum
+- Group Anagrams
+- Longest Consecutive Sequence
 
-#### Searching
-- Linear Search - O(n)
-- Binary Search - O(log n)
-- Jump Search - O(√n)
+### Stack
+LIFO data structure problems
+- Valid Parentheses
+- Min Stack
+- Evaluate Reverse Polish Notation
 
-#### Dynamic Programming
+### Queue
+FIFO data structure problems
+- Implement Queue using Stacks
+- Moving Average from Data Stream
+
+### Linked List
+Linked list manipulation
+- Reverse Linked List
+- Linked List Cycle
+- Merge Two Sorted Lists
+
+### Trees
+Binary tree and BST problems
+- Invert Binary Tree
+- Maximum Depth of Binary Tree
+- Validate Binary Search Tree
+
+### Graphs
+Graph traversal and algorithms
+- Number of Islands
+- Clone Graph
+- Course Schedule
+
+### Recursion
+Recursive problem solving
 - Fibonacci Sequence
-- 0/1 Knapsack Problem
-- Longest Common Subsequence
-- Coin Change Problem
-- Edit Distance
-
-#### Recursion
-- Factorial
-- Power Calculation
 - Tower of Hanoi
-- String Reversal
-- Palindrome Check
+- Factorial
 
-### Problems
+### Dynamic Programming
+Optimization problems with overlapping subproblems
+- Climbing Stairs
+- Coin Change
+- Longest Common Subsequence
 
-- **Two Sum**: Find two numbers that add up to target
-- **Reverse Linked List**: Reverse a singly linked list
-- **Valid Parentheses**: Check if parentheses are balanced
-- **Maximum Subarray**: Find contiguous subarray with largest sum (Kadane's Algorithm)
+### Greedy
+Problems with greedy choice property
+- Jump Game
+- Best Time to Buy and Sell Stock II
+- Gas Station
 
-## 📝 Time Complexity Quick Reference
+### Math
+Mathematical and number theory problems
+- Reverse Integer
+- Palindrome Number
+- Power of Two
+
+
+## 🎯 Learning Path
+
+### Beginner
+1. Start with **Arrays** and **Strings**
+2. Learn **Two Pointers** technique
+3. Practice **Stack** and **Queue** problems
+4. Master **Hash Maps** for fast lookups
+
+### Intermediate
+5. Dive into **Linked Lists**
+6. Explore **Trees** (especially BST)
+7. Learn **Recursion** fundamentals
+8. Practice **Sliding Window** problems
+
+### Advanced
+9. Master **Graphs** (DFS, BFS)
+10. Study **Dynamic Programming**
+11. Learn **Greedy** algorithms
+12. Solve **Math** problems
+
+## 🔄 Practice Workflow
+
+1. **Read** the problem in the category folder
+2. **Attempt** your solution in `solutions_v2/` folder
+3. **Compare** with the reference solution
+4. **Analyze** time and space complexity
+5. **Iterate** and optimize
+
+## 🛠️ Personal Solutions
+
+Use the `solutions_v2/` folder to implement your own solutions:
+
+```bash
+# Your solution
+solutions_v2/arrays/two_sum.py
+
+# Reference solution
+arrays/two_sum.py
+```
+
+This allows you to:
+- Practice implementation
+- Compare approaches
+- Track your progress
+- Build your portfolio
+
+## 📊 Time Complexity Quick Reference
 
 | Data Structure | Access | Search | Insertion | Deletion |
 |---------------|--------|--------|-----------|----------|
@@ -116,7 +225,7 @@ python problems/two_sum.py
 
 ## 🤝 Contributing
 
-This is a personal practice repository, but suggestions and improvements are welcome!
+This is a personal practice repository. Feel free to fork and customize for your own learning!
 
 ## 📄 License
 
@@ -124,7 +233,8 @@ This project is open source and available for educational purposes.
 
 ## 📚 Resources
 
-- [Big O Cheat Sheet](https://www.bigocheatsheet.com/)
-- [LeetCode](https://leetcode.com/)
-- [HackerRank](https://www.hackerrank.com/)
-- [GeeksforGeeks](https://www.geeksforgeeks.org/)
+- [LeetCode](https://leetcode.com/) - Practice platform
+- [NeetCode](https://neetcode.io/) - Curated problem list
+- [Big O Cheat Sheet](https://www.bigocheatsheet.com/) - Complexity reference
+- [Visualgo](https://visualgo.net/) - Algorithm visualizations
+- [GeeksforGeeks](https://www.geeksforgeeks.org/) - Tutorials and explanations
